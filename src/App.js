@@ -4,12 +4,12 @@ import { StackNavigator, DrawerNavigator } from "react-navigation";
 
 import Home from "./screens/home/";
 import SideBar from "./screens/sidebar";
-// import MRTMap from "./screens/mrtmap/";
+import MRTMap from "./screens/mrtmap/";
 
 const Drawer = DrawerNavigator(
   {
-    Home: { screen: Home }
-    // MRTMap: { screen: MRTMap }
+    Home: { screen: Home },
+    MRTMap: { screen: MRTMap }
   },
   {
     initialRouteName: "Home",

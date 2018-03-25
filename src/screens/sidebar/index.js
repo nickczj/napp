@@ -13,8 +13,16 @@ import {
 } from "native-base";
 import styles from "./style";
 
+const drawerCover = require("../../../assets/drawer-cover.png");
 const drawerImage = require("../../../assets/logo-napp.png");
-const datas = [];
+const datas = [
+  {
+    name: "MRT Map",
+    route: "MRTMap",
+    icon: "train",
+    bg: "#C5F442"
+  }
+];
 
 class SideBar extends Component {
   constructor(props) {
@@ -32,6 +40,7 @@ class SideBar extends Component {
           bounces={false}
           style={{ flex: 1, backgroundColor: "#fff", top: -1 }}
         >
+          <Image source={drawerCover} style={styles.drawerCover} />
           <Image square style={styles.drawerImage} source={drawerImage} />
 
           <List
